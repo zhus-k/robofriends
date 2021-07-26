@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
 import 'tachyons';
-import ErrorBoundary from '../components/ErrorBoundary';
 
 class App extends Component {
     constructor() {
