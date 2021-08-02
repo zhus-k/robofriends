@@ -1,0 +1,15 @@
+.mfont {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3%;
+}
+
+.grid-item {
+    display: inline;
+    padding: 3%;
+}

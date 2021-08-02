@@ -3,7 +3,7 @@ import Card from './Card';
 
 const CardList = ({ robots }) => {
     return (
-        <div>
+        <div className='grid-container'>
             { 
                 robots.map((user, i) => {
                     return (
