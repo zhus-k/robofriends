@@ -10,9 +10,14 @@
     min-height: 400px;
 }
 
+.searchbox {
+    min-width: 250px;
+}
+
 .infobox {
     padding: 2px 5px 2px;
     margin: 10px 2px 0px;
+    min-height: 140px;
 }
 
 .divider {
