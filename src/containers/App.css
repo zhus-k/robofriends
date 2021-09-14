@@ -6,6 +6,10 @@
     font-size: 4rem;
 }
 
+.card {
+    min-height: 400px;
+}
+
 .infobox {
     padding: 2px 5px 2px;
     margin: 10px 2px 0px;
