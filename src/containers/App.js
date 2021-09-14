@@ -42,7 +42,8 @@ class App extends Component {
         :
             (
             <div className='tc'>
-                <h1 className='b mfont'>RoboFriends</h1>
+                <h1 className='blanka4'>RoboFriends</h1>
+                <div className='divider'></div>
                 <SearchBox searchChange={ onSearchChange }/>
                 <Scroll>
                     <ErrorBoundary>

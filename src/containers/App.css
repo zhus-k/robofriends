@@ -1,8 +1,21 @@
-.mfont {
-    font-family: 'Courier New', Courier, monospace;
+
+.blanka4 {
+    font-family: 'Blanka', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
     font-size: 4rem;
 }
 
+.infobox {
+    padding: 2px 5px 2px;
+    margin: 10px 2px 0px;
+}
+
+.divider {
+    border-top: 3px solid rgb(255, 217, 94);
+    padding-bottom: 5px;
+}
+  
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

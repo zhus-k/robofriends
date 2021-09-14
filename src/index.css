@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Blanka';
+  src: url('./fonts/Blanka-Regular.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,10 +11,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to left, rgb(80, 109, 189) 0%, rgb(255, 174, 53) 100% );
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background: linear-gradient(to bottom, rgb(102, 133, 219) 0%, rgb(255, 227, 104) 100% );
 }
