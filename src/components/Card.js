@@ -24,7 +24,7 @@ class Card extends Component {
     }
 
     render(){
-        const { name , email, id, phone, website } = this.props;
+        const { name, email, id, phone, website } = this.props;
 
         return (
             this.state.isHovered

@@ -3,11 +3,7 @@
     font-family: 'Blanka', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 3rem;
-}
-
-.searchbox {
-    min-width: 250px;
+    font-size: 2.5rem;
 }
 
 .infobox {
@@ -23,7 +19,6 @@
   
 .grid-container {
     display: grid;
-    justify-content: center;
     justify-items: center;
     grid-template-columns: auto;
     padding: 2%;
@@ -34,7 +29,7 @@
 }
 
 .scrollbox {
-    height: 50rem;;
+    height: 50rem;
 }
 
 @media only screen and (min-width: 768px){
