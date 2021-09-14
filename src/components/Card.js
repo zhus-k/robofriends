@@ -29,7 +29,7 @@ class Card extends Component {
         return (
             this.state.isHovered
             ?
-            <div className='bg-light-yellow dib br3 pa3 ma2 grow bw2 shadow-5 tc grid-item card' onMouseLeave={ this.resetCard } >
+            <div className='bg-light-yellow dib br3 pa3 ma2 grow bw2 shadow-5 tc grid-item' onMouseLeave={ this.resetCard } >
                 <div className='br2 shadow-1 infobox'>
                     <h2 className=''>{ name }</h2>
                     <p className=''>{ email }</p>
@@ -38,7 +38,7 @@ class Card extends Component {
                 </div>
             </div>
             :
-            <div className='bg-light-yellow dib br3 pa3 ma2 grow bw2 shadow-5 tc grid-item card' onMouseEnter={ this.onEnter } onMouseLeave={ this.resetCard }>
+            <div className='bg-light-yellow dib br3 pa3 ma2 grow bw2 shadow-5 tc grid-item' onMouseEnter={ this.onEnter } onMouseLeave={ this.resetCard }>
                 <img src={`https://robohash.org/${id}?200x200`} alt="" />
                 <div className='br2 shadow-1 infobox'>
                     <h2 className=''>{ name }</h2>

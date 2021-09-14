@@ -3,11 +3,7 @@
     font-family: 'Blanka', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 4rem;
-}
-
-.card {
-    min-height: 400px;
+    font-size: 3rem;
 }
 
 .searchbox {
@@ -27,11 +23,26 @@
   
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 3%;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    padding: 2%;
 }
 
 .grid-item {
-    display: inline;
-    padding: 3%;
+    width: 90%;
+}
+
+.scrollbox {
+    height: 50rem;;
+}
+
+@media only screen and (min-width: 768px){
+    .grid-container {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .blanka4 {
+        font-size: 4rem;
+    }
 }
