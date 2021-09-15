@@ -6,31 +6,53 @@
     font-size: 2.5rem;
 }
 
-.infobox {
-    padding: 2px 5px 2px;
-    margin: 10px 2px 0px;
-    min-height: 140px;
-}
-
 .divider {
     border-top: 3px solid rgb(255, 217, 94);
     padding-bottom: 5px;
-}
-  
-.grid-container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: auto;
-    padding: 2%;
-}
-
-.grid-item {
-    width: 90%;
 }
 
 .scrollbox {
     height: 50rem;
 }
+  
+.grid-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-column: auto;
+    padding: 2%;
+}
+
+.card {
+    display: inherit;
+    position: relative;
+    width: auto;
+    height: 24rem;
+}
+
+.nameplate {
+    margin-bottom: 3rem;
+}
+
+.infobox {
+    min-height: 6rem;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    background-color: rgba(154, 210, 255, 0.514);
+    backdrop-filter: blur(2px);
+}
+
+.card:hover .overlay {
+    height: 100%;
+}
+
 
 @media only screen and (min-width: 768px){
     .grid-container {
