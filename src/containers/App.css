@@ -12,10 +12,11 @@
 }
 
 .scrollbox {
-    height: 50rem;
+    height: 75vw;
 }
   
 .grid-container {
+    position: relative;
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -24,6 +25,7 @@
 }
 
 .card {
+    position: absolute;
     display: inherit;
     position: relative;
     width: auto;
@@ -31,8 +33,9 @@
 }
 
 .nameplate {
-    margin-top: 2rem;
     margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .infobox {
