@@ -1,4 +1,5 @@
 @font-face {
+  font-display: swap;
   font-family: 'Blanka';
   src: url('./fonts/Blanka-Regular.ttf');
 }

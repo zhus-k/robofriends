@@ -12,16 +12,18 @@
 }
 
 .scrollbox {
-    height: 75vw;
+    display: inline-grid;
+    width: 80%;
+    height: 60vh;
 }
   
 .grid-container {
-    position: relative;
     display: grid;
     justify-content: center;
     justify-items: center;
     grid-column: auto;
     padding: 2%;
+    overflow-y: overlay;
 }
 
 .card {
@@ -29,17 +31,24 @@
     display: inherit;
     position: relative;
     width: auto;
-    height: 25rem;
+    min-height: 30vh;
+    height: 30vh;
 }
 
 .nameplate {
-    margin-bottom: 3rem;
+    min-height: 25%;
+    margin-bottom: 30%;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.m {
+    font-size: 0.7rem;
 }
 
 .infobox {
-    min-height: 6rem;
+    min-height: 30%;
 }
 
 .overlay {
@@ -57,8 +66,11 @@
     height: 100%;
 }
 
+.card:hover .nameplate {
+    margin-bottom: 0%;
+}
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 600px){
     .grid-container {
         grid-template-columns: repeat(3, auto);
     }
@@ -66,4 +78,21 @@
     .blanka4 {
         font-size: 4rem;
     }
+
+    .card {
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .card {
+        height: 28vh;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .card {
+        height: 33vh;
+    }
+
 }
