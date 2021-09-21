@@ -11,6 +11,10 @@
     padding-bottom: 5px;
 }
 
+.searchbox {
+    margin-bottom: 2rem;
+}
+
 .scrollbox {
     display: inline-grid;
     width: 80%;

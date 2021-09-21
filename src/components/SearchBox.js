@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchBox = ({ searchfield, searchChange }) => {
     return (
-        <div className='pa2'>
+        <div className='pa2 searchbox'>
             <input
                 aria-label='Search Robots'
                 className='pa3 ba b--green bg-lightest-blue'
