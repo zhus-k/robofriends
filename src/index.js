@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux'; 
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import { createLogger } from 'redux-logger';
-import thunk from 'redux-thunk';
-import './index.css';
 import App from './containers/App';
-import 'tachyons';
+
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import { createLogger } from 'redux-logger';
 import { searchRobots, requestRobots } from './reducers';
+
+import './index.css';
+import 'tachyons';
 
 let middleware = [];
 

@@ -7,6 +7,7 @@ import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
 import 'tachyons';
 import { requestRobots, setSearchField } from '../actions';
+import Header from '../components/Header';
 
 const mapStateToProps = state => {
     return {
@@ -32,25 +33,25 @@ class App extends Component {
 
     render() {
         const { searchField, onSearchChange, robots, isPending } = this.props;
-    
-        const filteredRobots = robots.filter( robot => {
+
+        const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchField.toLowerCase());
         });
 
         return isPending ?
             <h1 className='tc'>Loading...</h1>
-        :
+            :
             (
-            <div className='tc'>
-                <h1 className='blanka4 white'>RoboFriends</h1>
-                <div className='divider'></div>
-                <SearchBox searchChange={ onSearchChange }/>
-                <Scroll>
-                    <ErrorBoundary>
-                        <CardList robots={ filteredRobots }/>
-                    </ErrorBoundary>
-                </Scroll>
-            </div>
+                <div className='tc'>
+                    <Header />
+                    <div className='divider'></div>
+                    <SearchBox searchChange={onSearchChange} />
+                    <Scroll>
+                        <ErrorBoundary>
+                            <CardList robots={filteredRobots} />
+                        </ErrorBoundary>
+                    </Scroll>
+                </div>
             );
     };
 };
