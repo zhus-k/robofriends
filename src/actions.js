@@ -5,23 +5,41 @@ import {
     REQUEST_ROBOTS_FAILED,
 } from './constants';
 
-export const setSearchField = text => ({
-    type: CHANGE_SEARCH_FIELD,
-    payload: text,
-});
+export const setSearchField = text => (
+    {
+        type: CHANGE_SEARCH_FIELD,
+        payload: text,
+    }
+);
 
-export const requestRobots = () => dispatch => {
-    dispatch({
+export const requestRobots = () => async dispatch => {
+    dispatch(requestRobotsPending());
+
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await response.json();
+        dispatch(requestRobotsSuccess(data));
+    } catch (err) {
+        dispatch(requestRobotsFailed(err));
+    }
+}
+
+export const requestRobotsPending = () => {
+    return {
         type: REQUEST_ROBOTS_PENDING
-    });
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => dispatch({
+    }
+}
+
+export const requestRobotsSuccess = (data) => {
+    return {
         type: REQUEST_ROBOTS_SUCCESS,
         payload: data
-    }))
-    .catch(err => dispatch({
+    }
+}
+
+export const requestRobotsFailed = (err) => {
+    return {
         type: REQUEST_ROBOTS_FAILED,
         payload: err
-    }));
+    }
 }

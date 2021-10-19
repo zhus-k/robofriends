@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect App to render 1`] = `ShallowWrapper {}`;
+
+exports[`expect pending 1`] = `
+Object {
+  "children": "Loading...",
+  "className": "tc",
+}
+`;

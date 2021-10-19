@@ -35,8 +35,9 @@
     display: inherit;
     position: relative;
     width: auto;
-    min-height: 30vh;
-    height: 30vh;
+    min-height: 18rem;
+    max-height: 22rem;
+    height: 30%;
 }
 
 .nameplate {
@@ -84,19 +85,22 @@
     }
 
     .card {
-        height: 30vh;
+        min-height: 10rem;
+        height: 23vh;
     }
 }
 
 @media only screen and (min-width: 768px){
     .card {
+        min-height: 15rem;
         height: 28vh;
     }
 }
 
 @media only screen and (min-width: 1024px){
     .card {
-        height: 33vh;
+        min-height: 18rem;
+        max-height: 22rem;
+        height: 25vh;
     }
-
 }
